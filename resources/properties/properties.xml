@@ -1,0 +1,9 @@
+<properties>
+    <property id="ThemeMode" type="string">auto</property>
+    <property id="ShowHeartRate" type="boolean">true</property>
+    <property id="ShowSteps" type="boolean">true</property>
+    <property id="ShowBattery" type="boolean">true</property>
+    <property id="ShowWeather" type="boolean">true</property>
+    <property id="AnimationEnabled" type="boolean">true</property>
+    <property id="PowerSaveMode" type="string">off</property>
+</properties>

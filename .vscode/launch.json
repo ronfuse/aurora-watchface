@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build and Run Aurora Watch Face",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/aurora.prg",
+            "preLaunchTask": "Build Aurora Watch Face",
+            "console": "integratedTerminal"
+        }
+    ]
+}

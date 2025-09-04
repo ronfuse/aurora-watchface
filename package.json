@@ -1,0 +1,40 @@
+{
+  "name": "aurora-watchface",
+  "version": "1.0.0",
+  "description": "Dynamic and animated Garmin watch face with time-based themes",
+  "main": "source/AuroraWatchFaceApp.mc",
+  "scripts": {
+    "build": "monkeyc -f ./monkey.jungle -d forerunner965 -o aurora.prg -y developer_key.der",
+    "build:release": "monkeyc -f ./monkey.jungle -d forerunner965 -o aurora.prg -y developer_key.der --release",
+    "simulator": "connectiq",
+    "clean": "powershell -Command \"Remove-Item -Path '*.prg' -Force -ErrorAction SilentlyContinue\""
+  },
+  "keywords": [
+    "garmin",
+    "watchface",
+    "connectiq",
+    "forerunner965",
+    "animation",
+    "weather",
+    "dynamic"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/aurora-watchface.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/aurora-watchface/issues"
+  },
+  "homepage": "https://github.com/yourusername/aurora-watchface#readme",
+  "connectiq": {
+    "sdk": "4.2.0",
+    "targetDevices": [
+      "forerunner965",
+      "forerunner955", 
+      "fenix7",
+      "venu2"
+    ]
+  }
+}

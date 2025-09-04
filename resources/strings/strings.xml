@@ -1,0 +1,88 @@
+<resources>
+    <strings>
+        <string id="AppName">Aurora Watch Face</string>
+        <string id="AppDescription">Dynamic and animated watch face with time-based themes</string>
+        <string id="SettingsTitle">Aurora Settings</string>
+        <string id="ThemeMode">Theme Mode</string>
+        <string id="Complications">Complications</string>
+        <string id="Animation">Animation</string>
+        <string id="PowerSave">Power Save</string>
+        <string id="Auto">Auto</string>
+        <string id="Manual">Manual</string>
+        <string id="Enabled">Enabled</string>
+        <string id="Disabled">Disabled</string>
+        <string id="HeartRate">Heart Rate</string>
+        <string id="Steps">Steps</string>
+        <string id="Battery">Battery</string>
+        <string id="Weather">Weather</string>
+        <string id="Dawn">Dawn</string>
+        <string id="Day">Day</string>
+        <string id="Dusk">Dusk</string>
+        <string id="Night">Night</string>
+        <string id="High">High</string>
+        <string id="Medium">Medium</string>
+        <string id="Low">Low</string>
+        <string id="Off">Off</string>
+        <string id="On">On</string>
+    </strings>
+    
+    <fonts>
+        <font id="id_font_large" filename="fonts/large.fnt" />
+        <font id="id_font_medium" filename="fonts/medium.fnt" />
+        <font id="id_font_small" filename="fonts/small.fnt" />
+    </fonts>
+    
+    <bitmaps>
+        <bitmap id="LauncherIcon" filename="images/launcher_icon.png" />
+        <bitmap id="HeartIcon" filename="images/heart.png" />
+        <bitmap id="StepsIcon" filename="images/steps.png" />
+        <bitmap id="BatteryIcon" filename="images/battery.png" />
+        <bitmap id="WeatherIcon" filename="images/weather.png" />
+    </bitmaps>
+    
+    <menus>
+        <menu id="MainMenu">
+            <menu-item id="settings">@Strings.SettingsTitle</menu-item>
+        </menu>
+    </menus>
+    
+    <settings>
+        <setting propertyKey="@Properties.ThemeMode" title="@Strings.ThemeMode">
+            <settingConfig type="list">
+                <listEntry value="auto">@Strings.Auto</listEntry>
+                <listEntry value="dawn">@Strings.Dawn</listEntry>
+                <listEntry value="day">@Strings.Day</listEntry>
+                <listEntry value="dusk">@Strings.Dusk</listEntry>
+                <listEntry value="night">@Strings.Night</listEntry>
+            </settingConfig>
+        </setting>
+        
+        <setting propertyKey="@Properties.ShowHeartRate" title="@Strings.HeartRate">
+            <settingConfig type="boolean" />
+        </setting>
+        
+        <setting propertyKey="@Properties.ShowSteps" title="@Strings.Steps">
+            <settingConfig type="boolean" />
+        </setting>
+        
+        <setting propertyKey="@Properties.ShowBattery" title="@Strings.Battery">
+            <settingConfig type="boolean" />
+        </setting>
+        
+        <setting propertyKey="@Properties.ShowWeather" title="@Strings.Weather">
+            <settingConfig type="boolean" />
+        </setting>
+        
+        <setting propertyKey="@Properties.AnimationEnabled" title="@Strings.Animation">
+            <settingConfig type="boolean" />
+        </setting>
+        
+        <setting propertyKey="@Properties.PowerSaveMode" title="@Strings.PowerSave">
+            <settingConfig type="list">
+                <listEntry value="off">@Strings.Off</listEntry>
+                <listEntry value="medium">@Strings.Medium</listEntry>
+                <listEntry value="high">@Strings.High</listEntry>
+            </settingConfig>
+        </setting>
+    </settings>
+</resources>

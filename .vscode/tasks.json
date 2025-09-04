@@ -1,0 +1,87 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Aurora Watch Face",
+            "type": "shell",
+            "command": "monkeyc",
+            "args": [
+                "-f",
+                "./monkey.jungle",
+                "-d",
+                "forerunner965",
+                "-o",
+                "aurora.prg",
+                "-y",
+                "developer_key.der"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Build the Aurora watch face for Forerunner 965"
+        },
+        {
+            "label": "Build for Release",
+            "type": "shell",
+            "command": "monkeyc",
+            "args": [
+                "-f",
+                "./monkey.jungle",
+                "-d",
+                "forerunner965",
+                "-o",
+                "aurora.prg",
+                "-y",
+                "developer_key.der",
+                "--release"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Build the Aurora watch face for release"
+        },
+        {
+            "label": "Run Simulator",
+            "type": "shell",
+            "command": "connectiq",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "detail": "Launch Connect IQ simulator"
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "Remove-Item -Path '*.prg' -Force -ErrorAction SilentlyContinue"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "detail": "Clean build artifacts"
+        }
+    ]
+}

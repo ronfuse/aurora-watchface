@@ -1,0 +1,20 @@
+project.manifest = manifest.xml
+
+# Base Garmin devices
+base.resourcePath = $(base.resourcePath);resources-base
+
+# Specific device configurations
+forerunner965.resourcePath = $(forerunner965.resourcePath);resources-forerunner965
+forerunner955.resourcePath = $(forerunner955.resourcePath);resources-forerunner955
+fenix7.resourcePath = $(fenix7.resourcePath);resources-fenix7
+fenix7s.resourcePath = $(fenix7s.resourcePath);resources-fenix7s
+fenix7x.resourcePath = $(fenix7x.resourcePath);resources-fenix7x
+venu2.resourcePath = $(venu2.resourcePath);resources-venu2
+venu2s.resourcePath = $(venu2s.resourcePath);resources-venu2s
+venu2plus.resourcePath = $(venu2plus.resourcePath);resources-venu2plus
+vivoactive4.resourcePath = $(vivoactive4.resourcePath);resources-vivoactive4
+vivoactive4s.resourcePath = $(vivoactive4s.resourcePath);resources-vivoactive4s
+
+# Source paths
+base.sourcePath = source
+base.resourcePath = resources

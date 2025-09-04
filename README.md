@@ -58,7 +58,7 @@ An innovative and dynamic watch face designed specifically for Garmin devices, f
 
 2. **Clone or Download Project**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ronfuse/aurora-watchface.git
    cd aurora-watchface
    ```
 
@@ -126,21 +126,31 @@ The watch face is highly customizable through code modifications:
 4. Test on simulator and real device
 5. Submit a pull request
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
+## Documentation
+
+- 📖 [Development Setup](DEVELOPMENT.md) - How to build and develop
+- 🤝 [Contributing Guidelines](CONTRIBUTING.md) - How to contribute
+- 📋 [Changelog](CHANGELOG.md) - Version history and changes
+- 🛡️ [Security Policy](SECURITY.md) - Security and vulnerability reporting
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Credits
 
-- Designed and developed by [Your Name]
-- Weather icons from [Source]
+- Designed and developed by ronfuse
 - Inspired by aurora borealis natural phenomenon
+- Built with Garmin Connect IQ SDK
 
 ## Support
 
 For issues, feature requests, or questions:
-- Open an issue on GitHub
-- Contact: ronled@gmail.com
+- 🐛 [Open an issue on GitHub](https://github.com/ronfuse/aurora-watchface/issues)
+- 📧 Contact: ronled@gmail.com
+- 🛡️ Security issues: See [SECURITY.md](SECURITY.md)
 
 ---
 
